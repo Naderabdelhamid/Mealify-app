@@ -1,0 +1,271 @@
+:root {
+  --primary-hue: 200;
+  --primary-lightness: 70%;
+  --primary-saturation: 50%;
+  --light-hue: 220;
+  --light-saturation: 30%;
+  --light-lightness: 80%;
+  --color-default: #37373f;
+  --color-secondary: #7f7f90;
+  --color-tertiary: #6f7275;
+  --color-light-grey: #eeeeee;
+  --background-default: white;
+  --background-dark: #202020;
+  --text-dark: #cecece;
+  --text-secondary-dark: #9f9f9f;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-default);
+  color: var(--color-default);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amatic SC", sans-serif;
+  color: var(--color-default);
+}
+
+.nav {
+  background-color: white;
+}
+
+.nav .logo a {
+  color: rgb(33, 37, 41);
+}
+
+.nav .logo a::after {
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #d78c23;
+  position: absolute;
+  bottom: 8px;
+  right: -4px;
+}
+
+.nav .nav-links ul li a::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #d78c23;
+  bottom: -3px;
+  left: 0;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+}
+
+.header .header-box .header-info .header-buttons .book-btn {
+  border-radius: 0 50px 50px 50px;
+  padding: 15px 20px;
+  background-color: #d78c23;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.header .header-box .header-info .header-buttons .second-btn:hover {
+  color: #d78c23;
+}
+
+.contact .contact-box .box .box-icon {
+  background-color: #d78c23;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.contact .contact-form .contact-btn button {
+  background-color: #d78c23;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.footer .about .about-title h2::after {
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #d78c23;
+  position: absolute;
+  bottom: 8px;
+  right: -4px;
+}
+
+.footer .Subscribtion .sub-group button {
+  padding: 10px 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: #d78c23;
+  min-width: 110px;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.footer .contact-title ul li i {
+  color: #d78c23;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 22px;
+  cursor: pointer;
+}
+:root:has(.mode:checked) {
+  --color-default: var(--text-dark);
+  --color-secondary: var(--text-secondary-dark);
+  --color-tertiary: var(--text-secondary-dark);
+  --color-light-grey: #252525;
+  --background-default: var(--background-dark);
+}
+:root:has(.mode:checked) body {
+  background-color: var(--background-default);
+  color: var(--color-default);
+}
+:root:has(.mode:checked) h1,
+:root:has(.mode:checked) h2,
+:root:has(.mode:checked) h3,
+:root:has(.mode:checked) h4,
+:root:has(.mode:checked) h5,
+:root:has(.mode:checked) h6 {
+  color: var(--color-default);
+}
+:root:has(.mode:checked) .nav {
+  background-color: #171717;
+  box-shadow: 0px 0px 14px 0px #0000004d;
+}
+:root:has(.mode:checked) .nav .logo a {
+  color: #fff;
+}
+:root:has(.mode:checked) .nav .nav-links ul li a {
+  color: #ddd;
+}
+:root:has(.mode:checked) .nav .nav-links a:hover {
+  color: #fff;
+}
+:root:has(.mode:checked) .header {
+  background-color: #252525;
+}
+:root:has(.mode:checked) .header .header-box .header-info h2,
+:root:has(.mode:checked) .header .header-box .header-info p {
+  color: #ffffff;
+}
+:root:has(.mode:checked) .chefs .chefs-boxs .card {
+  background-color: #171717;
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+}
+:root:has(.mode:checked) .chefs .chefs-boxs .card .card-info {
+  background-color: #171717;
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+}
+:root:has(.mode:checked) .chefs .chefs-boxs .card .card-info h3,
+:root:has(.mode:checked) .chefs .chefs-boxs .card .card-info span,
+:root:has(.mode:checked) .chefs .chefs-boxs .card .card-info p {
+  color: #ffffff;
+}
+:root:has(.mode:checked) .gallery {
+  background-color: #252525;
+}
+:root:has(.mode:checked) .gallery .gallery-img {
+  border-color: #e6e6e6;
+}
+:root:has(.mode:checked) .contact {
+  background-color: #202020;
+  color: #ddd;
+}
+:root:has(.mode:checked) .contact .contact-box .box {
+  background-color: #0d0d0d;
+}
+:root:has(.mode:checked) .contact .contact-box .box .box-title h3,
+:root:has(.mode:checked) .contact .contact-box .box .box-title p {
+  color: #ddd;
+}
+:root:has(.mode:checked) .contact .contact-form {
+  background-color: #171717;
+  box-shadow: 0 0 1.875rem #0000004d;
+}
+:root:has(.mode:checked) .contact .contact-form .form-input input,
+:root:has(.mode:checked) .contact .contact-form .form-input textarea {
+  border-color: #777;
+  color: #ddd;
+}
+:root:has(.mode:checked) .footer {
+  background-image: url(../images/textured-metal-background.jpg);
+  color: #ddd;
+}
+:root:has(.mode:checked) .footer .about h3::before {
+  background-color: #777;
+}
+:root:has(.mode:checked) .footer .Subscribtion .sub-group input {
+  background-color: #333;
+  color: #ddd;
+  border-color: #555;
+}
+:root:has(.mode:checked) .footer .Subscribtion .quick-links ul li:hover {
+  background-color: #444;
+}
+:root:has(.mode:checked) .footer .contact-title ul li i,
+:root:has(.mode:checked) .footer .contact-title ul li span {
+  color: #ddd;
+}
+.mode-group {
+  display: flex;
+  align-items: center;
+}
+.mode-group label {
+  display: flex;
+  cursor: pointer;
+}
+.mode-group .light {
+  display: none;
+}
+:root:has(.mode:checked) .mode-group .dark {
+  display: none;
+}
+:root:has(.mode:checked) .mode-group .light {
+  display: block;
+}
+.mode {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.mode-group {
+  display: flex;
+  align-items: center;
+}
+.mode-group label {
+  display: flex;
+  cursor: pointer;
+}
+.mode-group .sun {
+  display: none;
+}
+:root:has(.mode:checked) .moon {
+  display: none;
+}
+:root:has(.mode:checked) .sun {
+  display: block;
+}
+.mode {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
