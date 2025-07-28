@@ -662,37 +662,30 @@ h3 {
   gap: 10px;
   padding: 10px;
 }
+
 .footer .Subscribtion .quick-links ul li {
   width: 100%;
-  animation: move ease;
-  animation-play-state: paused;
-  animation-duration: 800ms;
-  animation-delay: 0.5s;
-  animation-timing-function: unset;
   position: relative;
+  padding: 5px;
+  border-radius: 4px;
+  transition: transform 0.4s ease, background-color 0.3s ease;
 }
+
 .footer .Subscribtion .quick-links ul li:hover {
   background-color: #222222;
-  animation-play-state: running;
+  transform: translateX(10px);
 }
-@keyframes move {
-  0% {
-    left: 0;
-  }
-  50% {
-    left: 20px;
-  }
-  100% {
-    left: 0;
-  }
+
+.footer .Subscribtion .quick-links ul li:hover a {
+  color: #ce1212;
 }
+
 .footer .Subscribtion .quick-links ul li::before {
   content: "\f105";
   margin-right: 5px;
   font: 900 1em/1 "Font Awesome 6 Free";
 }
 .footer .contact-title {
-  /* width: 23%; */
   width: 100%;
 }
 .footer .contact-title ul {
