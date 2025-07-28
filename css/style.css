@@ -328,7 +328,7 @@ body:has(.contact:target) .contact-links::before {
   background-color: #ffffff4d;
   color: rgba(0, 0, 0, 0.541);
 }
-.chefs .chefs-boxs .card .card-img .chefs-layer:hover i {
+.chefs .chefs-boxs .card .card-img .chefs-layer a:hover i {
   color: black;
 }
 .chefs .chefs-boxs .card:hover .chefs-layer {
